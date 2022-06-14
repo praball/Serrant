@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles4.css">
+
+
+    <title>Series Ranters</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/index.html">Serrant</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/rant.html">Let's Rant!</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/check.html">To-watch!</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Genre
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Sit-Coms</a>
+                        <a class="dropdown-item" href="#">Murder-Mystery</a>
+                        <a class="dropdown-item" href="#">Romance</a>
+                        <a class="dropdown-item" href="#">Fantasy</a>
+                        <a class="dropdown-item" href="#">Sci-Fi</a>
+                        <a class="dropdown-item" href="#">Anime</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something new!</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="alert alert-warning alert-dismissible fade show my-3 mx-4" role="alert">
+        <strong>Holy guacamole!</strong> We bring you a whole set of latest and best TV series recommendations, sorted
+        by genre, for the binge watcher inside of you.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="accordion p-2 mx-4" id="accordionExample">
+        <div class="card">
+            <div class="card-header bg-dark" id="headingOne">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-outline-primary btn-link text-white" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How to use!
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body bg-white">
+                    <ul>
+                        <li>Firstly, you could create your own personalized To-watch list and add your
+                            favourite TV-series and movies in it using the <button type="button"
+                                class="btn btn-sm btn-primary">Add</button> button.
+                        </li>
+                        <li>
+                            Once you are done with a series or item, just <strong>double click</strong> on it to mark it
+                            done.
+                        </li>
+                        <li>
+                            When you are done listing names on your personalized To-watch list, click on
+                            <button type="button" class="btn btn-sm btn-success">Save List</button> to save your list.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-dark" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-outline-primary btn-link text-white collapsed" type="button"
+                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        More Info!
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            You could use the <button type="button" class="my-1 btn btn-sm btn-danger">Empty
+                                List</button> button to
+                            completely empty your whole list and then click on <button type="button"
+                                class="btn btn-sm btn-success">Save List</button> to save the
+                            empty list.
+                        </li>
+                        <li>
+                            The <button type="button" class=" my-1 btn btn-sm btn-primary">Clear Completed</button>
+                            button marks all your completed items from the list with doublestrikes.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-dark" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-outline-primary btn-link text-white collapsed" type="button"
+                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        Our Recomms!
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            We have provided you with some of the best recommendations of hyped up shows of every genre
+                            as well below.
+                        </li>
+                        <li>
+                            Feel free to use our recommendations to create your own personalized 
+                            To-watch list and enjoy them along the journey!
+                        
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="todo-wrapper">
+        <h2>Your to-watch list:</h2>
+        <p></p>
+        <form name="todo-adder">
+            <input type="text" placeholder="Write name of the show here!" id="todo-entry-box" />
+        </form>
+        <button id="add-button" class="pretty-button">Add</button>
+        <br />
+        <p>Your personalized <strong>Serrant</strong> series checker: </p>
+        <ol id="todo-list">
+            
+        </ol>
+
+        <p>Our Recommendations:</p>
+
+        <button class="btn btn-outline-primary text-light mb-3 btn-link btn-dark" type="button" data-toggle="collapse"
+            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Click here to see our Recommendations!
+        </button>
+
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body" style="font-family:'Times New Roman', Times, serif;">
+                <ul id="todo-list">
+                    <li>
+                        <button class="btn my-2 btn-outline-danger" type="button" data-toggle="collapse"
+                            data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                            Action:
+                        </button>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body">
+                                <ol id="todo-list">
+                                    <li>Peaky Blinders.</li>
+                                    <li>The Boys.</li>
+                                    <li>Breaking Bad.</li>
+                                    <li>The Walking Dead.</li>
+                                    <li>The Umbrella Academy.</li>
+                                    <li>Love, Death & Robots.</li>
+                                    <li>Money Heist.</li>
+                                    <li>Alice in Borderland.</li>
+                                    <li>Chernobyl.</li>
+                                    <li>All of us are dead.</li>
+                                    <li>Arrow.</li>
+                                    <li>Punisher.</li>
+                                    <li>Squid Games.</li>
+                                    <li>The Spy.</li>
+                                    <li>Watchmen.</li>
+                                    <li>Gotham.</li>
+                                    <li>Daredevil.</li>
+                                    <li>Shadow and Bone.</li>
+                                    <li>Z Nation.</li>
+                                    <li>Titans.</li>
+                                    <li>Narcos.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn my-2 btn-outline-danger" type="button" data-toggle="collapse"
+                            data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                            Sit-Coms:
+                        </button>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                                <ol id="todo-list">
+                                    <li>The Office.</li>
+                                    <li>Friends.</li>
+                                    <li>Two and a Half Men</li>
+                                    <li>How I met your Mother.</li>
+                                    <li>Modern Family.</li>
+                                    <li>The Big Bang Theory.</li>
+                                    <li>Two Broke Girls.</li>
+                                    <li>Brooklyn 99.</li>
+                                    <li>Inside Job.</li>
+                                    <li>Family guy.</li>
+                                    <li>After Life.</li>
+                                    <li>Parks and Recreation.</li>
+                                    <li>Schitt's Creek.</li>
+                                    <li>Big Mouth.</li>
+                                    <li>Archer.</li>
+                                    <li>Rick and Morty.</li>
+                                    <li>Impractical Jokers.</li>
+                                    <li>Seinfeld.</li>
+                                    <li>Arrested Development.</li>
+                                    <li>South Park.</li>
+                                    <li>Bojack Horseman.</li>
+                                    <li>Wanda Vision.</li>
+
+                                </ol>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn my-2 btn-outline-danger" type="button" data-toggle="collapse"
+                            data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                            Murder-Mystery:
+                        </button>
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                                <ol id="todo-list">
+                                    <li>Sherlock.</li>
+                                    <li>Only Muders in the Building.</li>
+                                    <li>Mindhunters.</li>
+                                    <li>Better Call Saul.</li>
+                                    <li>True Detective.</li>
+                                    <li>The Sinner.</li>
+                                    <li>Blacklist.</li>
+                                    <li>Elite.</li>
+                                    <li>Ozark.</li>
+                                    <li>Who killed Sara?</li>
+                                    <li>The Alienist.</li>
+                                    <li>How to get away with Muder.</li>
+                                    <li>Pablo Escobar.</li>
+                                    <li>Riverdale.</li>
+                                    <li>S.W.A.T.</li>
+                                    <li>Lupin.</li>
+                                    <li>House of Secrets.</li>
+                                    <li>Snowpiercer.</li>
+                                </ol>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn my-2 btn-outline-danger" type="button" data-toggle="collapse"
+                            data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                            Romance:
+                        </button>
+                        <div class="collapse" id="collapseExample4">
+                            <div class="card card-body">
+                                <ol id="todo-list">
+                                    <li>Bridgerton.</li>
+                                    <li>Emily in Paris.</li>
+                                    <li>13 Reasons Why.</li>
+                                    <li>Sex Education.</li>
+                                    <li>Heartstopper.</li>
+                                    <li>Cable Girls.</li>
+                                    <li>The Mindy project.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn my-2 btn-outline-danger" type="button" data-toggle="collapse"
+                            data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+                            Fantasy:
+                        </button>
+                        <div class="collapse" id="collapseExample5">
+                            <div class="card card-body">
+                                <ol id="todo-list">
+                                    <li>Game of Thrones.</li>
+                                    <li>Dark.</li>
+                                    <li>Vikings.</li>
+                                    <li>See.</li>
+                                    <li>The Witcher.</li>
+                                    <li>Arcane.</li>
+                                    <li>Lucifer.</li>
+                                    <li>Supernatural.</li>
+                                    <li>The last Kingdom.</li>
+                                    <li>Barbarians.</li>
+                                    <li>Frontier.</li>
+                                    <li>Guardian.</li>
+                                    <li>Lost in Space.</li>
+                                    <li>Ragnarok.</li>
+                                    <li>Van Helsing.</li>
+                                    <li>Avatar: The Last Airbender.</li>
+                                    <li>Loki.</li>
+                                </ol>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn my-2 btn-outline-danger" type="button" data-toggle="collapse"
+                            data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+                            Sci-Fi:
+                        </button>
+                        <div class="collapse" id="collapseExample6">
+                            <div class="card card-body">
+                                <ol id="todo-list">
+                                    <li>The Umbrella Academy.</li>
+                                    <li>Stranger Things.</li>
+                                    <li>Rick and Morty.</li>
+                                    <li>Altered Carbon.</li>
+                                    <li>The Mandalorian.</li>
+                                    <li>Westworld.</li>
+                                    <li>Fear the Walking dead.</li>
+                                    <li>Black Mirror.</li>
+                                    <li>The Flash.</li>
+                                    <li>Manifest.</li>
+                                    <li>Upload.</li>
+                                    <li>Dark.</li>
+                                    <li>Sense 8.</li>
+                                    <li>Moon Knight.</li>
+                                    <li>Hawkeye.</li>
+                                    <li>What if...?</li>
+                                    <li>Travelers.</li>
+                                    <li>Loki.</li>
+
+                                </ol>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn my-2 btn-outline-danger" type="button" data-toggle="collapse"
+                            data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample">
+                            Anime:
+                        </button>
+                        <div class="collapse" id="collapseExample7">
+                            <div class="card card-body">
+                                <ol id="todo-list">
+                                    <li>Fullmetal Alchemist: Brotherhood.</li>
+                                    <li>Naruto.</li>
+                                    <li>One Piece.</li>
+                                    <li>One Punch Man.</li>
+                                    <li>Tokyo Revenegers.</li>
+                                    <li>Deathnote.</li>
+                                    <li>Baki.</li>
+                                    <li>Baki Hanma.</li>
+                                    <li>Attack on Titans.</li>
+                                    <li>Assasination Classroom.</li>
+                                    <li>Kakegurui.</li>
+                                    <li>Moriarty The Patriot.</li>
+                                    <li>Code Geass.</li>
+                                    <li>HunterxHunter.</li>
+                                    <li>Demon Slayer.</li>
+                                    <li>Jujutsu Kaisen.</li>
+                                    <li>SpyxFamily.</li>
+                                    <li>Dr.Stone.</li>
+                                    <li>Stein's Gate.</li>
+                                    <li>Banana Fish.</li>
+                                    <li>My Hero Academia.</li>
+                                    <li>Devilman Crybaby.</li>
+                                    <li>Tokyo Ghoul.</li>
+                                    <li>Shumatsu no Harem.</li>
+                                    <li>Mob Psycho 100.</li>
+                                    <li>Berserk.</li>
+                                    <li>Bleach.</li>
+                                    <li>Black Clover.</li>
+                                    <li>Haikyuu!!.</li>
+                                    <li>JoJo's Bizarre Adventure.</li>
+                                    <li>High School DXD.</li>
+                                </ol>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <br><br>
+        <hr>
+        <div id="control-wrapper">
+            <button id="clear-completed-button" class="pretty-button">Clear Completed</button>
+            <button id="empty-button" class="pretty-button">Empty List</button>
+            <button id="save-button" class="pretty-button">Save List</button>
+        </div>
+
+
+
+
+
+        <br>
+        <hr>
+        <footer class="container">
+            <p class="float-right text-primary"><a href="#">Back to top</a></p>
+            <p>
+                <p1 class="text-dark"><strong>© Copyright 2022, Prabal Pophaley ·</strong></p1> <a href="#"> Privacy</a>
+                ·
+                <a href="#">Terms</a>
+            </p>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="script2.js"></script>
+</body>
+
+</html>
